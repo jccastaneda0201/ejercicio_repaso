@@ -121,3 +121,27 @@ header {
 }
 
 /* End Header */
+
+/* Star Footer */
+
+footer {
+  background-color: black;
+  padding: 1.25rem;
+  color: white;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  ul.social li {
+    display: inline-block;
+    margin: 0 0.3125rem;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/* End Footer */
