@@ -216,10 +216,35 @@ main section {
 @media (width>=900px) {
   #aboutus .container {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 /* End About Us */
+
+/* Star CallToAction Section */
+#calltoaction {
+  background-image: url(./img/qt-bg.jpg);
+  padding: 5rem 0rem;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+
+  blockquote {
+    font-style: italic;
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: var(--gap);
+  }
+  author {
+    font-size: 1.2rem;
+  }
+}
+
+/* End CallToAction Section */
 
 /* Star Footer */
 
