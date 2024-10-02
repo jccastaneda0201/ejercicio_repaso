@@ -165,13 +165,68 @@ header {
     margin: 1.25rem 0rem;
   }
 }
+/* End Hero */
+
+/* Star About Us*/
+main section {
+  margin: 3.75rem 0rem;
+
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+
+    span {
+      color: var(--primary-color);
+    }
+  }
+}
+
+#aboutus .container {
+  display: flex;
+  flex-direction: column;
+
+  figure {
+    padding: var(--gap);
+    width: 100%;
+
+    img {
+      border-top: 10px solid var(--primary-color);
+      border-bottom: 10px solid white;
+      border-left: 10px solid var(--primary-color);
+      border-right: 10px solid white;
+    }
+  }
+  div.column {
+    padding: var(--gap);
+    text-align: center;
+    width: 100%;
+  }
+
+  h5 {
+    margin-bottom: var(--gap);
+  }
+  p {
+    color: var(--text-color);
+    line-height: 1.5rem;
+    margin-bottom: var(--gap);
+  }
+}
+
+@media (width>=900px) {
+  #aboutus .container {
+    flex-direction: row;
+  }
+}
+
+/* End About Us */
 
 /* Star Footer */
 
 footer {
   background-color: black;
   color: white;
-  padding: 1.25rem;
+  padding: 2rem !important;
 
   .container {
     display: flex;
