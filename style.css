@@ -41,49 +41,56 @@ img {
   display: block;
 }
 /* Star Header */
+
 header {
-  padding: 1rem !important;
-  background-color: var(--second-color);
+  padding: var(--gap);
+  background-color: var(--secondary-color);
   position: sticky;
-  top: 0px;
+  top: 0rem;
   width: 100%;
   z-index: 1;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0rem 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+
+  .hamburger {
+    cursor: pointer;
+    width: 3.125rem;
+    margin-top: 0.625rem;
+
+    div {
+      width: 1.875rem;
+      height: 0.125rem;
+      background-color: var(--primary-color);
+      margin: 0.3125rem 0;
+    }
+  }
+
+  figure {
+    width: 12.5rem;
+  }
 
   .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
 
-    figure {
-      width: 12.5rem;
-    }
+  nav {
+    width: 100%;
+    padding: 1.5rem 0;
 
-    .hamburger {
-      cursor: pointer;
-      width: 3.125rem;
+    ul {
+      list-style: none;
 
-      div {
-        width: 1.875rem;
-        height: 0.125rem;
-        background-color: var(--primary-color);
-        margin: 0.375rem 0;
-      }
-    }
-
-    nav {
-      width: 100%;
-      padding: 1.5rem 0;
-
-      ul li a {
+      a {
         display: inline-block;
         color: black;
-        padding: 10px 20px;
         text-decoration: none;
-        width: 100%;
         text-align: center;
-        margin-bottom: 0.625rem;
-        border-radius: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        background-color: transparent;
+        border-radius: 0.3125rem;
         transition: 0.5s;
 
         &:hover {
