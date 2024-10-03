@@ -313,6 +313,48 @@ main section {
 
 /* End Menu */
 
+/* Star Contacto */
+#contact {
+  background-color: var(--primary-color);
+  padding: 1.25rem;
+  margin-bottom: 0px;
+
+  .icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1.25rem;
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      span {
+        display: none;
+      }
+
+      i {
+        background-color: white;
+        color: var(--primary-color);
+        padding: 15px;
+        font-size: 120%;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .map {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+  }
+}
+@media (width >=48rem) {
+  #contact .icons a span {
+    display: inline-block;
+    margin-left: 0.625rem;
+  }
+}
+
+/* End Contacto */
+
 /* Star Footer */
 
 footer {
